@@ -1,0 +1,441 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .main-article {
+    display: flex;
+ 
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fdf6e3;
+  }
+  
+  .article-content {
+    flex: 1 1 60%;
+  }
+  
+  .article-category {
+    color: #c4a000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  .article-title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  .article-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .article-image {
+    flex: 1 1 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .article-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .content {
+    flex: 3;
+  }
+  .content p{
+    text-align: left;
+    text-indent: 2em;
+    font-size: medium;
+    line-height: 1.8em;
+  }
+  .content h3 {
+    margin-top: 1.5rem;
+    font-weight: bold;
+  }
+  .content .pelajaran{
+    text-indent: 2rem;
+    font-style: italic;
+  }
+  
+  .sidebar {
+    flex: 1;
+  }
+  
+  .recent-articles h2,
+  .categories h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .article-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .article-item .title {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .article-item .meta {
+    font-size: 0.75rem;
+    color: #777;
+  }
+  
+  .categories ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categories li {
+    margin-bottom: 0.5rem;
+  }
+  .custom-quote {
+    border-left: 5px solid #2ecc71; /* Garis hijau di kiri */
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    background-color: #fafafa;
+    position: relative;
+    font-style: italic;
+    color: #666; /* Warna abu-abu */
+  }
+  
+  .custom-quote p {
+    margin: 0;
+    text-indent: 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .custom-quote .quote-icon-start,
+  .custom-quote .quote-icon-end {
+    font-style: normal;
+    font-size: 1.5em;
+    color: #888;
+    vertical-align: top;
+  }
+  
+  .custom-quote .quote-icon-start {
+    margin-right: 4px;
+  }
+  
+  .custom-quote .quote-icon-end {
+    margin-left: 4px;
+  }
+  .content span{
+    color: #2ecc71;
+  }  
+  .author-box {
+    text-align: center;
+    padding: 2em;
+    border: 1px solid #eee;
+    max-width: 700px;
+    margin: 2em auto;
+    background-color: #fff;
+  }
+  
+  .author-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+  }
+  
+  .author-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    
+  }  
+
+  .footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .footer-links .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 40px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #d4aa00;
+  }
+  
+  .footer-about {
+    max-width: 400px;
+  }
+  
+  .footer-about h1 {
+    font-size: 32px;
+    margin: 0 0 10px;
+  }
+  
+  .footer-about .orange {
+    color: #b28b31;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .footer-about .dot {
+    color: #fff;
+  }
+  
+  .footer-about p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  
+/* pembuatan LETTER DAN FOOTERNYA */
+.newsletter {
+    margin-top: 50px;
+    background: #f8f2e3;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter-content {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    gap: 30px;
+  }
+  
+  .icon-box {
+    background-color: #b28b31;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .newsletter .text h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .newsletter .text p {
+    margin: 10px 0 0;
+    color: #444;
+  }
+  
+  .form {
+    flex: 1;
+  }
+  
+  .form input {
+    padding: 12px;
+    width: 70%;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .form button {
+    padding: 14px 20px;
+    background-color: #b28b31;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    opacity: 0.9;
+  }
+  img{
+    height: 100px;
+    width: 180px;
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .icon-box {
+      padding: 20px;
+    }
+  
+    .form input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .form button {
+      width: 100%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .footer-links .column {
+      margin-left: 0;
+    }
+  
+    .footer-about h1 {
+      font-size: 24px;
+    }
+  
+    .footer-about p {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .newsletter {
+      padding: 30px 15px;
+    }
+  
+    .newsletter .text h2 {
+      font-size: 20px;
+    }
+  
+    .newsletter .text p {
+      font-size: 14px;
+    }
+  
+    .icon {
+      font-size: 24px;
+    }
+  
+    .form input,
+    .form button {
+      font-size: 14px;
+    }
+  }
+  /* ======== RESPONSIVE ======== */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .main-article {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  .article-content {
+    width: 100%;
+  }
+
+  .article-title {
+    font-size: 2rem;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .article-image {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .article-title {
+    font-size: 1.75rem;
+  }
+
+  .article-meta {
+    font-size: 0.85rem;
+  }
+
+  .article-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .recent-articles h2,
+  .categories h2 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+    line-height: 1.6em;
+  }
+}
