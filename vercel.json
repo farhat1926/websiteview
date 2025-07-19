@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/assets/$1" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
